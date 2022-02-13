@@ -41,8 +41,8 @@ jobs:
           
           neptune mlflow
 
-          #pip freeze > requirements_docker.txt
-          #python --version > python_version.txt
+          pip freeze > requirements_docker.txt
+          python --version > python_version.txt
           echo "   " >> report.md
           echo "   " >> report.md
           cat report2.md >> report.md          
