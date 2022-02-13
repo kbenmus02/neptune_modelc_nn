@@ -40,10 +40,12 @@ jobs:
           export NEPTUNE_API_TOKEN="$NEPTUNE_API_TOKEN"
           export NEPTUNE_PROJECT="$NEPTUNE_PROJECT"
           
-          jupyter nbconvert --to notebook --execute notebook/iteration_4_generate_model_cnn.ipynb
+          cd notebook/
+          jupyter nbconvert --to notebook --execute iteration_4_generate_model_cnn.ipynb
           
           neptune mlflow
 
+          cd ../
           pip freeze > requirements_docker.txt
           python --version > python_version.txt
           echo "   " >> report.md
