@@ -1,4 +1,4 @@
-neptune
+neptune-mlflow
 glob2
 import-ipynb
 mlflow
