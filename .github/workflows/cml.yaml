@@ -53,7 +53,9 @@ jobs:
           cat report2.md >> report.md
           echo "   " >> report.md
           echo "   " >> report.md
-          cat history.png >> report.md          
+          echo "## History" >> report.md
+          cml-publish history.png --md >> report.md 
+          
           ls -lrt
 
       - name: send model to remote storage
