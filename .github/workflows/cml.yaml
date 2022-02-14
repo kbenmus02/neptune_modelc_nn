@@ -55,7 +55,7 @@ jobs:
           echo "   " >> report.md
           echo "## History" >> report.md
           cml-publish history.png --md >> report.md 
-          
+          cml-send-comment report.md
           ls -lrt
 
       - name: send model to remote storage
